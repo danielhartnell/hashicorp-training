@@ -30,7 +30,7 @@ variable "label" {
 }
 
 variable "num_webs" {
-  default = "2"
+  default = "3"
 }
 
 terraform {
