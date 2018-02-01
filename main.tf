@@ -36,6 +36,7 @@ variable "num_webs" {
 terraform {
   backend "atlas" {
     name = "dhartnell/training"
+    address = "https://atlas.hashicorp.com"
   }
 }
 
