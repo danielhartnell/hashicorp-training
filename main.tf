@@ -30,7 +30,7 @@ variable "label" {
 }
 
 variable "num_webs" {
-  default = "3"
+  default = "6"
 }
 
 terraform {
@@ -58,6 +58,7 @@ resource "aws_instance" "web" {
     Owner    = "Daniel"
     Company  = "Mozilla"
     Name     = "${var.label} ${count.index+1}/${var.num_webs}"
+    Another  = "Tag"
   }
 }
 
